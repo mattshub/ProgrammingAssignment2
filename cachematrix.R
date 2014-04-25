@@ -1,5 +1,5 @@
 ## R Functions : Solve and Cache inverse of a matrix. These functions will
-## solve and cache the inverse of a matrix. 
+## find the inverse and cache same for later retrieval
 
 ## makeCacheMatrix : This function takes in a matrix as input and creates
 ## a list that holds the matrix itself, the inverse of same if already 
@@ -26,7 +26,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## its already cached else will solve & cache same
 cacheSolve <- function(x, ...) {
         ## Returns a matrix that is inverse of 'x'
-        ## Tryning to get the inverse from cache
+        ## Trying to get the inverse from cache
         inv <- x$getinverse()
         if(!is.null(inv)) {
                 message("Getting inverse of the matrix from cache")
