@@ -6,15 +6,15 @@
 ## generated once and functions needed to access same
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
-        ## set function to set the matrix
+        ##  function to set the matrix
         set <- function(y) {
                 x <<- y
                 inv <<- NULL
         }
         get <- function() x
-        ## set function to set the inverse matrix
+        ##  function to set the inverse matrix
         setinverse <- function(inverse) inv <<- inverse
-        ## get function to get the inverse matrix
+        ##  function to get the inverse matrix
         getinverse <- function() inv
         list(set = set, get = get,
              setinverse = setinverse,
